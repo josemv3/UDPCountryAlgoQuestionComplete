@@ -57,23 +57,20 @@ func findShortestCountry2() {
         else if shortestWord.count > country.count {
             shortestWord = country
         }
-            
     }
     print(shortestWord)
     print(shortestWord.count)
-    
 }
-var allShortestCountries: [String] = []
 
 func findAllShortestCountries() {
     
+    var allShortestCountries: [String] = []
     for country in countries {
-        
         if shortestWord.count == country.count {
             allShortestCountries.append(country)
         }
     }
-         print(allShortestCountries)
+    print(allShortestCountries)
 }
 findShortestCountry2()
 findAllShortestCountries()

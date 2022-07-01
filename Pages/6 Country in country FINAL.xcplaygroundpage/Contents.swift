@@ -74,25 +74,20 @@ func findCountryNameDuplicated6() {
     var duplicateNamesFound: [String] = []
     
     for country in countries {
-    
-    let targetName = country
-    
-    
-    for country in countries {
         
-        if country == targetName {
-            print ("Duplicate \(targetName) - \(country)")
-        } else if country.contains(targetName) {
-            duplicateNamesFound.append(country)
-            print("Origin \(targetName)")
-            print("... \(country)")
+        let targetName = country
+        
+        for country in countries {
+            
+            if country == targetName {
+                print ("Duplicate \(targetName) - \(country)")
+            } else if country.contains(targetName) {
+                duplicateNamesFound.append(country)
+                print("Origin \(targetName)")
+                print("... \(country)")
+            }
         }
-        
-        
-    }//for
-        
     }
-   
     print(duplicateNamesFound)
 }
 findCountryNameDuplicated6()
